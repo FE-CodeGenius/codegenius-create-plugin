@@ -1,12 +1,8 @@
 import type { CAC } from "cac";
-import {
-  ACTIVATION,
-  execCommand,
-  loggerInfo,
-  ProjectSource,
-  projectSources,
-} from "code-genius";
+import { ACTIVATION, execCommand, loggerInfo } from "code-genius";
 import enquirer from "enquirer";
+
+import { ProjectSource, projectSources } from "./common";
 
 interface PromptResult {
   command: string;
